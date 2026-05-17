@@ -1,0 +1,34 @@
+# Build
+build/
+out/
+.cache/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Binaires
+*.o
+*.a
+*.so
+*.out
+*.elf
+
+# VSCode (garder uniquement c_cpp_properties et extensions)
+.vscode/*
+!.vscode/c_cpp_properties.json
+!.vscode/extensions.json
+
+# FetchContent cache
+_deps/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PDF
+*.pdf
