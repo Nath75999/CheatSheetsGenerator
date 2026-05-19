@@ -1,6 +1,6 @@
 #pragma once
 
-#include "mupdf/fitz.h"
+#include <mupdf/pdf.h>
 
 #include <string_view>
 #include <string>

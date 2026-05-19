@@ -25,7 +25,7 @@ std::string PdfReader::readPage(int id){
                     result += buff;
                 }
 
-                //result += '\n';
+                result += '\n';
             }
 
             result += '\n';

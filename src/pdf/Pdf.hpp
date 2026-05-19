@@ -1,6 +1,8 @@
 #pragma once
 
-#include "mupdf/fitz.h"
+#include <mupdf/pdf.h>
+
+#include <iostream>
 
 #include <string_view>
 #include <string>
@@ -8,7 +10,7 @@
 
 class Pdf{
     public:
-        Pdf(std::string_view path);
+        Pdf(std::string_view path = "");
 
         ~Pdf();
 
