@@ -31,4 +31,5 @@ _deps/
 Thumbs.db
 
 # PDF
-*/*.pdf
+data/input_pdfs/*
+data/output_fiches/*
