@@ -24,7 +24,9 @@ void PdfWriter::writeText(std::string_view text) {
     pdf_dict_put_name(ctx, font, PDF_NAME(Subtype), "Type1");
     pdf_dict_put_name(ctx, font, PDF_NAME(BaseFont),"Helvetica");
     
-    pdf_dict_put(ctx, fonts, pdf_new_name(ctx, "F1"), font);
+    pdf_obj* f1_key = pdf_new_name(ctx, "F1");
+    pdf_dict_put(ctx, fonts, f1_key, font);
+    pdf_drop_obj(ctx, f1_key);
     pdf_dict_put(ctx, res,   PDF_NAME(Font), fonts);
 
     pdf_obj* page = pdf_add_page(ctx, pdf, mediabox, 0, res, buffer);
